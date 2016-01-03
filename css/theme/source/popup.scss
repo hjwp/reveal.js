@@ -1,0 +1,24 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+// @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Century Schoolbook L', serif;
+$headingFont: 'Century Schoolbook L', serif;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
