@@ -15,7 +15,8 @@
 		<link rel="stylesheet" href="css/theme/popup.css" id="theme">
 
         <style>
-          /* Animation */
+          /* Animation. credit to Thiago Teles Pereira. http://codepen.io/thiagoteles/pen/ogoxLw */
+
 
           .anim-typewriter {
               width: 100%;
@@ -58,15 +59,15 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<p class="anim-typewriter">
-                        <code>Tebaldo appealed to Capuleto for peace...</code>
-					</p>
-				</section>
-
-				<section>
 					<h2>Pop-Up Opera Presents</h2>
                     <h3><i>Bellini's</i></h3>
 					<h1>i Capuletti e i Montecchi</h1>
+				</section>
+
+				<section>
+					<p class="anim-typewriter">
+                        <code>Tebaldo appealed to Capuleto for peace...</code>
+					</p>
 				</section>
 
 				<section data-background="css/images/silent_film_caption_background.png">
@@ -78,18 +79,56 @@
                     <aside class="notes">Notes on on an empty slide</aside>
                 </section>
 
-				<section>
-                </section>
 
-				<section>
-					<h3>Things to talk about</h3>
-					<p>wifi splash screen</p>
-					<p>raspberry pi or own laptops</p>
-					<p>captions simpler, less animations</p>
-					<p>tim, html, making live updates</p>
-					<p>backup plans</p>
+
+				<section data-background="css/images/silent_film_caption_background.png">
+					<h3>We have to go, now!</h3>
 				</section>
 
+				<section data-background="css/images/silent_film_caption_background.png">
+					<h3>It's the Capuleto spy</h3>
+				</section>
+
+				<section data-background="css/images/silent_film_caption_background.png">
+					<h3>Get him!</h3>
+				</section>
+
+				<section data-background="css/images/silent_film_caption_background.png">
+					<h3>I am your rival in love.</h3>
+                    <p>(hard to translate to modern idiom)</p>
+				</section>
+
+				<section>
+					<h3>(soccorso quintet)</h3>
+                    <p class="anim-typewriter"><code>
+                      The Capulets all wanted to know who really was this stranger, this Capulet who claimed to be having an affair with their Giuletta.  How could they have let this happen?
+                    </p></code>
+				</section>
+				<section>
+					<h3>(end of soccorso quintet)</h3>
+                    <p class="anim-typewriter"><code>
+                      Capuleto discovers the love notes.  Could this man really be their most hated enemy?
+                    </p></code>
+				</section>
+
+
+				<section>
+                    <p class="anim-typewriter"><code>
+                      As the two held each other, Capuleto and his men realised the truth -- Gi they'd been lovers all this time.
+                    </p></code>
+				</section>
+
+				<section data-background="css/images/silent_film_caption_background.png">
+					<h3>You are Romeo!</h3>
+				</section>
+				<section data-background="css/images/silent_film_caption_background.png">
+					<h3>I am.  And now there will be blood</h3>
+				</section>
+				<section>
+                    <p class="anim-typewriter"><code>
+                      Juliet stepped in front of her lover, protecting him from Tebaldo
+                    </p></code>
+				</section>
 			</div>
 
 		</div>
@@ -156,6 +195,17 @@
                     { src: 'plugin/notes-server/client.js', async: true }
 				]
 			});
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+                var element;
+                var anims = document.getElementsByClassName("anim-typewriter");
+                for (i in anims) {
+                    element = anims[i];
+                    element.classList.remove("anim-typewriter");
+                    element.offsetWidth = element.offsetWidth;
+                    element.classList.add("anim-typewriter");
+                };
+            } );
 
 		</script>
 
