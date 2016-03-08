@@ -14,6 +14,29 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/popup.css" id="theme">
 
+        <style>
+          /* Animation */
+
+          .anim-typewriter {
+              width: 100%;
+            border-right: 2px solid rgba(255,255,255,.75);
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);    
+            animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+          }
+
+          @keyframes typewriter {
+              from{width: 0;}
+              to{width: 100%;}
+          }
+          @keyframes blinkTextCursor {
+              from{border-right-color: rgba(255,255,255,.75);}
+              to{border-right-color: transparent;}
+          }
+        </style>
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -35,6 +58,12 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
+					<p class="anim-typewriter">
+                        <code>Tebaldo appealed to Capuleto for peace...</code>
+					</p>
+				</section>
+
+				<section>
 					<h2>Pop-Up Opera Presents</h2>
                     <h3><i>Bellini's</i></h3>
 					<h1>i Capuletti e i Montecchi</h1>
@@ -48,13 +77,6 @@
 				<section>
                     <aside class="notes">Notes on on an empty slide</aside>
                 </section>
-
-				<section>
-					<h2>Another slide</h2>
-					<p>
-						Smaller text...
-					</p>
-				</section>
 
 				<section>
                 </section>
