@@ -1,0 +1,5 @@
+should remember what slide we were on when refreshing page
+fade out effect after intro exposition
+
+? more specific intro for lorenzo +  g at beginning?
+
