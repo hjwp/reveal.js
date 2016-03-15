@@ -44,8 +44,8 @@
               clear: both; 
               margin: 0;
               float: right; /* makes animation go left-to-right */
-              width:100%;
-              background: #2b2b2b; /* same as page background */
+              width:100%; /* TODO: for graceful degradation, make this 0 */
+              background: black; /* #2b2b2b; /* same as page background */
               animation: typing 2s steps(30, end);
               animation-fill-mode: forwards;  /* leave on last frame at end */
             }
@@ -179,8 +179,7 @@
 				<section>
                     <p class="anim-typewriter"><code>
                         In the midst of all the commotion, Giuleta finds herself alone.  She realises this may be her last few moments of freedom, as she fumbles, trying to tune in her radio and find out what's happening outside.
-                    </p></code>
-                    <p class="anim-typewriter"><code>
+                        <br />
                         ?relieved, stay of execution... also romeo moment, post-radio?
                     </p></code>
                     <aside class="notes">Tace if fragor, libera io son ancor</aside>
