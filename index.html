@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
 
@@ -164,7 +163,7 @@ var audienceSettings = {
 
 var mySettings = {};
 var extraSettings = audienceSettings;
-if (location.hostname === 'localhost') {
+if (location.hostname === 'localhost' && location.port != 1948) {
   extraSettings = serverSettings;
 }
 
@@ -174,7 +173,7 @@ for (var setting in basicSettings) {
 for (var setting in extraSettings) {
   mySettings[setting] = extraSettings[setting];
 }
-Reveal.initialize(basicSettings);
+Reveal.initialize(mySettings);
 
     </script>
 
