@@ -128,6 +128,52 @@ var basicSettings = {
     { src: 'plugin/notes-server/client.js', async: true }
   ]
 };
+
+var serverSettings = {
+  multiplex: {
+    secret: "1451726925591987832", // Obtained from the socket.io server. Gives this (the master) control of the presentation 
+    id: "3ca8ead97d9ed83d", // id, obtained from socket.io server
+    url: 'localhost:1948' // Location of your socket.io server
+  },
+
+  // Optional reveal.js plugins
+  dependencies: [
+  { src: 'js/socket.io-1.3.5.js', async: true },
+  { src: 'plugin/multiplex/master.js', async: true },
+  { src: 'plugin/notes-server/client.js', async: true }
+  ]
+};
+
+var audienceSettings = {
+  controls: false, // Display controls in the bottom right corner
+  progress: false, // Display a presentation progress bar
+  keyboard: false, // Enable keyboard shortcuts for navigation
+  autoSlideStoppable: false, // Stop auto-sliding after user input
+
+  multiplex: {
+    secret: null, // so audience cant control presentation
+    id: "3ca8ead97d9ed83d", // id, obtained from socket.io server
+    url: '' // socket.io server is local
+  },
+
+  dependencies: [
+  { src: 'js/socket.io-1.3.5.js', async: true },
+  { src: 'plugin/multiplex/client.js', async: true }
+  ]
+};
+
+var mySettings = {};
+var extraSettings = audienceSettings;
+if (location.hostname === 'localhost') {
+  extraSettings = serverSettings;
+}
+
+for (var setting in basicSettings) {
+  mySettings[setting] = basicSettings[setting];
+}
+for (var setting in extraSettings) {
+  mySettings[setting] = extraSettings[setting];
+}
 Reveal.initialize(basicSettings);
 
     </script>
