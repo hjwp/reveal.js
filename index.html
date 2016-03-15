@@ -36,7 +36,7 @@
               color: black;
             }
 
-            p.anim-hider {
+            section.present .hiders p {
               position: relative; 
               clear: both; 
               margin: 0;
@@ -47,16 +47,16 @@
               animation-fill-mode: forwards;  /* leave on last frame at end */
             }
               
-            .anim-hider:nth-child(2) {
+            section.present .hiders p:nth-child(2) {
               animation-delay: 2s;
             }
-            .anim-hider:nth-child(3) {
+            section.present .hiders p:nth-child(3) {
               animation-delay: 4s;
             }
-            .anim-hider:nth-child(4) {
+            section.present .hiders p:nth-child(4) {
               animation-delay: 6s;
             }
-            .anim-hider:nth-child(5) {
+            section.present .hiders p:nth-child(5) {
               animation-delay: 8s;
             }
 
@@ -419,19 +419,6 @@
             }
 
 			Reveal.initialize(mySettings);
-
-            Reveal.addEventListener('slidechanged', function(event) {
-                console.log('slide change');
-                var hiders = event.currentSlide.querySelectorAll(".hiders p");
-                console.log(hiders);
-                for (var i=0; i<hiders.length; i++) {
-                    var element = hiders[i];
-                    console.log(element.innerHTML);
-                    element.classList.remove("anim-hider");
-                    element.offsetWidth = element.offsetWidth;
-                    element.classList.add("anim-hider");
-                };
-            });
 
 		</script>
 
