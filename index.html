@@ -401,7 +401,7 @@
 
             var mySettings = {};
             var extraSettings = audienceSettings;
-            if (location.hostname === 'localhost') {
+            if (location.hostname === 'localhost' && location.port != 1948) {
                 extraSettings = serverSettings
             }
 
@@ -426,7 +426,6 @@
                     element.classList.add("anim-hider");
                 };
             });
-            console.log(location.port);
 
 		</script>
 
