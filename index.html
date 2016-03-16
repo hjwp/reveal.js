@@ -13,81 +13,81 @@
     <link rel="stylesheet" href="css/theme/popup.css" id="theme">
 
     <style>
-      @keyframes typing {
-        from { width: 100% }
-        to { width: 0 }
-      }
+@keyframes typing {
+  from { width: 100% }
+  to { width: 0 }
+}
 
-      p.anim-typewriter {
-        font-family: Consolas, monospace;
-        position: absolute;
-        top: 0;
-        margin: 0;
-        z-index: -1;
-        text-align: left;
-      }
+p.anim-typewriter {
+  font-family: Consolas, monospace;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: -1;
+  text-align: left;
+}
 
-      .hiders {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        color: black; 
-      }
+.hiders {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: black; 
+}
 
-      section.present .hiders p {
-        position: relative; 
-        clear: both; 
-        margin: 0;
-        float: right; /* makes animation go left-to-right */
-        width:100%; /* TODO: for graceful degradation, make this 0. somehow */
-        background: black; /* same as page background */
-        animation: typing 1s steps(30, end);
-        animation-fill-mode: forwards;  /* leave on last frame at end */
-      }
+section.present .hiders p {
+  position: relative; 
+  clear: both; 
+  margin: 0;
+  float: right; /* makes animation go left-to-right */
+  width:100%; /* TODO: for graceful degradation, make this 0. somehow */
+  background: black; /* same as page background */
+  animation: typing 1s steps(30, end);
+  animation-fill-mode: forwards;  /* leave on last frame at end */
+}
 
-      section.present .hiders p:nth-child(2) {
-        animation-delay: 1s;
-      }
-      section.present .hiders p:nth-child(3) {
-        animation-delay: 2s;
-      }
-      section.present .hiders p:nth-child(4) {
-        animation-delay: 3s;
-      }
-      section.present .hiders p:nth-child(5) {
-        animation-delay: 4s;
-      }
-      section.present .hiders p:nth-child(6) {
-        animation-delay: 5s;
-      }
-      section.present .hiders p:nth-child(7) {
-        animation-delay: 6s;
-      }
-      section.present .hiders p:nth-child(8) {
-        animation-delay: 7s;
-      }
-      section.present .hiders p:nth-child(9) {
-        animation-delay: 8s;
-      }
-      section.present .hiders p:nth-child(10) {
-        animation-delay: 9s;
-      }
-      section.present .hiders p:nth-child(11) {
-        animation-delay: 10s;
-      }
-      section.present .hiders p:nth-child(12) {
-        animation-delay: 11s;
-      }
-      section.present .hiders p:nth-child(13) {
-        animation-delay: 12s;
-      }
-      section.present .hiders p:nth-child(14) {
-        animation-delay: 13s;
-      }
-      section.present .hiders p:nth-child(15) {
-        animation-delay: 15s;
-      }
+section.present .hiders p:nth-child(2) {
+  animation-delay: 1s;
+}
+section.present .hiders p:nth-child(3) {
+  animation-delay: 2s;
+}
+section.present .hiders p:nth-child(4) {
+  animation-delay: 3s;
+}
+section.present .hiders p:nth-child(5) {
+  animation-delay: 4s;
+}
+section.present .hiders p:nth-child(6) {
+  animation-delay: 5s;
+}
+section.present .hiders p:nth-child(7) {
+  animation-delay: 6s;
+}
+section.present .hiders p:nth-child(8) {
+  animation-delay: 7s;
+}
+section.present .hiders p:nth-child(9) {
+  animation-delay: 8s;
+}
+section.present .hiders p:nth-child(10) {
+  animation-delay: 9s;
+}
+section.present .hiders p:nth-child(11) {
+  animation-delay: 10s;
+}
+section.present .hiders p:nth-child(12) {
+  animation-delay: 11s;
+}
+section.present .hiders p:nth-child(13) {
+  animation-delay: 12s;
+}
+section.present .hiders p:nth-child(14) {
+  animation-delay: 13s;
+}
+section.present .hiders p:nth-child(15) {
+  animation-delay: 15s;
+}
 
     </style>
 
@@ -97,11 +97,13 @@
   </head>
 
   <body>
-
     <div class="reveal">
       <div class="slides">
 
-        <section></section>
+
+        <section>
+          <aside class="notes">Opening slide, blank</aside>
+        </section>
 
         <section data-background="css/images/silent_film_caption_background.png">
           <h2>Pop-Up Opera Presents</h2>
@@ -825,6 +827,8 @@ Ah! at least we will see each other
           </table>
         </section>
 
+        <!-- or... -->
+
         <section data-background="css/images/silent_film_caption_background.png">
           <h3>
             What if it doesn't work?  What if I get stuck in that cold
@@ -1039,57 +1043,212 @@ Ah! at least we will see each other
         </section>
         <section>
           <p class="anim-typewriter">
-            Romeo is left alone
+            Romeo is left alone at the scene of Giulietta's funeral...
           </p>
           <div class="hiders"><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p></div>
           <aside class="notes">romeo starts alone.  juliet is a ghost almost giving him flowers</aside>
         </section>
 
         <!-- Act 2 Scene 10 -->
-        <section>
-          <aside class="notes">aria: ecco la tomba</aside>
-          <aside class="notes">flowers, wet with tears</aside>
-          <aside class="notes">there'll be more tears before all this is over</aside>
-        </section>
 
         <section data-background="css/images/silent_film_caption_background.png">
-          <h3>Juliet!  Is that you?</h3>
+          <table>
+            <tr>
+              <td><i>
+                  Ecco la tomba,
+                  ancor di fiori sparsa,
+                  molli di pianto ancor.
+                  Altro fra poco maggior del pianto,
+                  altro olocausto avrai.
+              </i></td>
+              <td>
+                Here is the tomb,
+                still strewn with flowers,
+                still wet with tears.
+                Soon you will have another,
+                great storm of tears
+              </td>
+            </tr>
+          </table>
+          <aside class="notes">tebaldo</aside>
         </section>
 
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h3>Giulietta!  Is that you?</h3>
+        </section>
+
+
+        <section>
+        </section>
         <section data-background="css/images/silent_film_caption_background.png">
           <h3>You look like you're only sleeping</h3>
         </section>
 
         <section>
-          <p class="anim-typewriter">
-            You can't leave me like this
-          </p>
-          <div class="hiders"><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p></div>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <table>
+            <tr>
+              <td><i>
+                  Sorgi, mio ben,<br />
+                  al suon de' miei sospiri:<br />
+                  ti chiama il tuo Romeo,<br />
+                  sorgi, mio bene.
+              </i></td>
+              <td>
+                Rise, my beloved,<br />
+                at the sound of my sighs.<br />
+                Your Romeo calls you,<br />
+                rise, my beloved.
+              </td>
+            </tr>
+          </table>
+          <aside class="notes">tebaldo</aside>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h3>Ah, it's no use</h3>
           <aside class="notes">aria: deh tu bel' anima</aside>
         </section>
 
+
+        <section>
+        </section>
         <section data-background="css/images/silent_film_caption_background.png">
-          <h2>Juliet!  You're alive?</h2>
+          <h3>You can't leave me like this</h3>
+          <aside class="notes">aria: deh tu bel' anima</aside>
         </section>
 
-        <section data-background="css/images/silent_film_caption_background.png">
-          <h2>Didn't you speak to Lorenzo</h2>
-        </section>
+        <!-- or -->
+
 
         <section data-background="css/images/silent_film_caption_background.png">
-          <h2>All I knew is that you were dead<h2>
+          <table>
+            <tr>
+              <td><i>
+                  Deh! tu, bell'anima,
+                  che al ciel ascendi,
+                  a me rivolgiti, con te mi prendi:
+                  così scordarmi, così lasciarmi,
+                  non puoi, bell'anima,
+                  nel mio dolor.
+              </i></td>
+              <td>
+                Alas! You, beautiful soul,
+                who ascend to Heaven,
+                return to me, take me with you.
+                You cannot forget me like this;
+                leave me like this, beautiful soul,
+                in my sorrow.
+              </td>
+            </tr>
+          </table>
+          <aside class="notes">tebaldo</aside>
         </section>
 
+        <section>
+        </section>
         <section data-background="css/images/silent_film_caption_background.png">
-          <h2>What does it matter? we can be free now!<h2>
+          <table>
+            <tr>
+              <td><i>
+                  Raccogliete voi l'ultimo mio sospiro,
+                  tombe de' miei nemici.
+              </i></td>
+              <td>
+                Gather you up my final breath,
+                tombs of my enemies.
+              </td>
+            </tr>
+          </table>
+          <aside class="notes">tebaldo</aside>
         </section>
 
+        <section>
+        </section>
         <section data-background="css/images/silent_film_caption_background.png">
-          <h2>I can't see.  I can't see you<h2>
+          <h2>Giulietta!  You're alive?</h2>
         </section>
 
+        <section>
+        </section>
         <section data-background="css/images/silent_film_caption_background.png">
-          <h2>Remember what we had...<h2>
+          <h2>Didn't you speak to Lorenzo?</h2>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>All I knew is that you were dead.<h2>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>What does it matter? We can be free now!<h2>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>What have you done?<h2>
+          <aside class="notes">
+            leave on thru two bits
+          </aside>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>Give me a gun, some pills, something<h2>
+        </section>
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>I took them all.<h2>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <table>
+            <tr>
+              <td><i>
+                  Vivi, ah! vivi,<br />
+                  e vien talora<br />
+                  sul mio sasso a lagrimar.<br />
+                </i></td>
+                <td>
+                  Live! Ah! Live! <br />
+                  And come sometimes,<br />
+                  to weep on my grave.<br />
+                </td>
+            </tr>
+          </table>
+          <aside class="notes">this is repeated twice</aside>
+        </section>
+
+        <section>
+          <aside class="notes">piu non ti vego</aside>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>I can't see!  I can't see you!<h2>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>Never forget what we had...<h2>
+        </section>
+
+        <section>
+        </section>
+        <section data-background="css/images/silent_film_caption_background.png">
+          <h2>THE END<h2>
         </section>
 
       </div>
@@ -1145,7 +1304,7 @@ var basicSettings = {
   parallaxBackgroundVertical: null,
 
   /*
-     TODO: work on these to fit background
+     TODO: these could help to fit background 
      width: 1429,
      height: 1103,
      margin: 0.2,
