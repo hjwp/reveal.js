@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/theme/popup.css" id="theme">
 
     <style>
+@keyframes expand {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 @keyframes typing {
   from { width: 100% }
   to { width: 0 }
@@ -31,8 +36,9 @@ p.anim-typewriter {
   margin: 0;
   position: absolute;
   top: 0;
-  width: 100%;
-  color: black; 
+  width: 0;
+  animation: expand 0.1s;
+  animation-fill-mode: forwards;  /* leave on last frame at end */
 }
 
 section.present .hiders p {
@@ -47,6 +53,9 @@ section.present .hiders p {
   animation-fill-mode: forwards;  /* leave on last frame at end */
 }
 
+section.present .hiders p:nth-child(2) {
+  animation-delay: 0.2s;
+}
 section.present .hiders p:nth-child(2) {
   animation-delay: 1s;
 }
