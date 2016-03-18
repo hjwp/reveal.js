@@ -1,11 +1,8 @@
-should remember what slide we were on when refreshing page
-fade out effect after intro exposition
-
-? more specific intro for lorenzo +  g at beginning?
-
-think typewriter isn't working on iphone/safari
-
+fade out effect after intro exposition?
 
 restart procedure: close the presentation view, and go back to the window that was next to it -- the localhost:1947 which has the arrows, not the one the audience sees.  refresh that, and it
 opens a new copy of the presenter mode.
+
+
+fix all poetry-style line endings in literals
 
