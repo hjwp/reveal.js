@@ -30,11 +30,6 @@ table.literal td:nth-child(1), table.literal-long td:nth-child(1) {
 }
 
 
-@keyframes expand {
-  from { width: 0 }
-  to { width: 100% }
-}
-
 @keyframes typing {
   from { width: 100% }
   to { width: 0 }
@@ -53,9 +48,7 @@ p.anim-typewriter {
   margin: 0;
   position: absolute;
   top: 0;
-  width: 0;
-  animation: expand 0.01s;
-  animation-fill-mode: forwards;  /* leave on last frame at end */
+  width: 100%;
 }
 
 section.present .hiders p {
@@ -63,16 +56,12 @@ section.present .hiders p {
   clear: both; 
   margin: 0;
   float: right; /* makes animation go left-to-right */
-  width:100%;
   color: black; 
   background: black; /* same as page background */
   animation: typing 1s steps(30, end);
-  animation-fill-mode: forwards;  /* leave on last frame at end */
+  animation-fill-mode: both;  /* leave on last frame at end */
 }
 
-section.present .hiders p:nth-child(2) {
-  animation-delay: 0.02s;
-}
 section.present .hiders p:nth-child(2) {
   animation-delay: 1s;
 }
