@@ -4,5 +4,7 @@ restart procedure: close the presentation view, and go back to the window that w
 opens a new copy of the presenter mode.
 
 
-fix all poetry-style line endings in literals
+past tense in opening slides
+
+how about if g went into audience?
 
