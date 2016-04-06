@@ -31,9 +31,10 @@ table.literal td:nth-child(1), table.literal-long td:nth-child(1) {
 
 p.caption-text-example {
   float:left;
-  margin-top:45%;
+  margin-left: -10%;
+  margin-top:30%;
   font-family: Consolas, monospace;
-  font-size: 27pt;
+  font-size: 25pt;
   width:40%;
   color: black;
 
@@ -135,8 +136,13 @@ section.present .hiders p:nth-child(15) {
           <aside class="notes">Opening slide, blank</aside>
         </section>
 
-        <section data-background="css/images/cover-slide-grey.png">
-          <p class="caption-text-example">Caption text example: minimum text size</p>
+        <section data-background="css/images/cover-slide-grey-centered.png">
+          <p class="caption-text-example">
+            <i>
+              Captions will be projected in this font size.
+              Make sure you can read this!
+            </i>
+          </p>
           <aside class="notes">Opening slide, with picture</aside>
         </section>
 
@@ -1792,7 +1798,7 @@ var basicSettings = {
 
    width: 1056,
    height: 594,
-   margin: 0.05,
+   margin: 0.25,
    minScale: 0.3,
    maxScale: 4,
 };
