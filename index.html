@@ -1026,9 +1026,7 @@ section.present .hiders p:nth-child(15) {
         <section data-background="css/images/silent_film_caption_background.png">
           <h2>
             This is our last chance Giulietta.
-            <br />
             If our love means anything to you,
-            <br />
             come with me now!
             </h2>
           <aside class="notes"></aside>
@@ -1834,6 +1832,7 @@ section.present .hiders p:nth-child(15) {
     <script src="js/reveal.js"></script>
 
     <script>
+/* global Reveal */
 var basicSettings = {
   // Full list of configuration options available at:
   // https://github.com/hakimel/reveal.js#configuration
@@ -1916,19 +1915,19 @@ var audienceSettings = {
   { src: 'js/socket.io-1.3.5.js', async: true },
   { src: 'plugin/multiplex/client.js', async: true }
   ]
-}
+};
 
 var mySettings = {};
 var extraSettings = audienceSettings;
 if (location.hostname === 'localhost' && location.port != 1948) {
-  extraSettings = serverSettings
+  extraSettings = serverSettings;
 }
 
 for (var setting in basicSettings) {
-  mySettings[setting] = basicSettings[setting]
+  mySettings[setting] = basicSettings[setting];
 }
 for (var setting in extraSettings) {
-  mySettings[setting] = extraSettings[setting]
+  mySettings[setting] = extraSettings[setting];
 }
 
 Reveal.initialize(mySettings);
