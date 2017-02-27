@@ -43,7 +43,9 @@ body {
   letter-spacing: normal;
   text-transform: none;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  font-style: italic
+ }
 
 .reveal h1 {
   font-size: 3.77em; }
