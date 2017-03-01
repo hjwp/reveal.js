@@ -87,6 +87,17 @@ Find out your computer's "IP address".  On mac or linux, run `ifconfig`, on wind
 Then tell the audience to visit: http://192.168.0.4:1948, subtituting in your own IP address. You can test this yourself.
 
 
+# Editing the slides
+
+All contained in *index.html*.  Open it with a text editor (on a Mac, ctrl-click, select open with, Atom text editor)
+
+```
+<section>  -- slide
+<h2>  -- main captions
+<aside class="notes"> -- presenter notes, can be on empty slide before, or on slide itself
+```
+
+
 # Installing for the first time
 
 
