@@ -69,6 +69,16 @@ p.caption-text-example {
   to { width: 0 }
 }
 
+@keyframes fade-in-and-out {
+  0%   { opacity:0; }
+  50%   { opacity:0; }
+  75%  { opacity:1; }
+  100% { opacity:0; }
+}
+.fade-in-and-out {
+  animation: fade-in-and-out 20s infinite;
+}
+
 p.anim-typewriter {
   font-family: Consolas, monospace;
   position: absolute;
@@ -159,7 +169,7 @@ section.present .hiders p:nth-child(15) {
         </section>
 
         <section data-background="css/images/cover-slide-grey-noyear.png">
-          <p class="caption-text-example">
+          <p class="caption-text-example fade-in-and-out">
             Translations projected in
             this font size.
           </p>
